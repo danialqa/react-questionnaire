@@ -1,0 +1,71 @@
+@import 'variables';
+@import 'mixins';
+
+@font-face {
+  font-family: 'GT Cinetype';
+  src: url('../common/fonts/GT-Cinetype.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'GT Cinetype';
+  background-color: $color_fueled_white;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+
+  ::placeholder {
+    color: $color_dark_grey;
+    opacity: 0.5;
+  }
+  :-ms-input-placeholder {
+    color: $color_dark_grey;
+    opacity: 0.5;
+  }
+  ::-ms-input-placeholder {
+    color: $color_dark_grey;
+    opacity: 0.5;
+  }
+}
+
+a {
+  transition: all ease-in-out 0.2s;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+button {
+  border: 0;
+  outline: none;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container {
+  width: 712px;
+  margin: 0 auto;
+
+  @include tablet() {
+    width: 100%;
+  }
+
+  @include mobile() {
+    width: 100%;
+  }
+}

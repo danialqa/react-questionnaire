@@ -1,0 +1,44 @@
+@import '/src/theme/colors';
+
+input,
+select {
+  width: 100%;
+  height: 52px;
+  border: 1px solid $color_border;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 16px;
+  font-family: 'GT Cinetype';
+  font-size: 16px;
+  color: $color_dark_grey;
+  transition: all ease 0.2s;
+
+  &:focus {
+    border-color: $color_fueled_red;
+  }
+}
+
+select {
+  height: 40px;
+  font-size: 14px;
+  cursor: pointer;
+  appearance: none;
+  background: url('../../../public/assets/images/input-chevron.svg') no-repeat
+    bottom 12px right 16px;
+  max-width: 271px;
+}
+
+label {
+  width: 100%;
+  font-size: 12px;
+  margin: 0 0 6px 0;
+
+  &.AnswerLabel {
+    margin: 0 0 16px 0;
+  }
+}
+
+.SelectWrapper {
+  display: flex;
+  flex-direction: column;
+}

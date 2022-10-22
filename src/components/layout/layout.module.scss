@@ -1,0 +1,17 @@
+@import '/src/theme/mixins';
+
+.Contents {
+  padding: 32px 0 0;
+  width: 712px;
+  margin: 0 auto;
+
+  @include tablet() {
+    width: 100%;
+    padding: 16px 16px 0;
+  }
+
+  @include mobile() {
+    width: 100%;
+    padding: 16px 16px 0;
+  }
+}
