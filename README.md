@@ -1,4 +1,3 @@
-# ![](./public/assets/images/fueled-logo.svg) Fueled Questionnaire
+# ![]React Questionnaire!
 
-In this project, I tried to implement features without complexity.
-I made the decision to develop the questionnaire form without a package (like formik).
+With this project, I aimed to simplify the implementation of functionalities whenever possible. I choose to create the survey instrument independently of any preexisting package (like Formik).
